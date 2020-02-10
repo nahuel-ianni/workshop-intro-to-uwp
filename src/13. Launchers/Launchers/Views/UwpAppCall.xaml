@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Launchers.Views.UwpAppCall"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Launchers.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Uid="UwpAppCallTextBlock" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <TextBox x:Name="AppTextBox" />
+            <Button x:Uid="MapButton" Margin="0,5" Click="Map_Button_Click"/>
+            <Button x:Uid="AppButton" Click="App_Button_Click"/>
+            <TextBlock x:Name="ResultTextBlock" Margin="0,5" Style="{StaticResource BodyTextBlockStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>

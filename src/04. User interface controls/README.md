@@ -1,0 +1,2 @@
+# User interface controls
+An application to show how the implementation and functionality of the [Hub](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Hub), [Master-Detail](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/master-details), [Navigation Pane](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/navigationview) and [Pivot](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/pivot) views work.

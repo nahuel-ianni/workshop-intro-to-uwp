@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="MapsAndLocation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapsAndLocation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton Icon="Page" Label="Track position" Click="TPAppBarButton_Click"/>
+            <AppBarButton Icon="Page2" Label="Get position" Click="GPAppBarButton_Click"/>
+            <AppBarButton Icon="Pictures" Label="Async task" Click="ATAppBarButton_Click"/>
+        </CommandBar>
+    </Page.TopAppBar>
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Map location examples" HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

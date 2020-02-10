@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="SampleApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Uid="TitleTextBlock" HorizontalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <TextBox x:Name="FamilyNameTextBox" HorizontalAlignment="Center" IsReadOnly="True" Margin="0,5"/>
+            <TextBlock x:Name="ReceivedDataTextBlock" HorizontalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+            <Button x:Uid="SendButton" Margin="0,5" HorizontalAlignment="Center" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

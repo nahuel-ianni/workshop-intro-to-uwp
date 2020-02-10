@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="SpeechCommandDemo_en-us">
+    <!--Order that will inform Cortana to know which VCD file to use.-->
+    <CommandPrefix>Speech recognition, </CommandPrefix>
+    
+    <!--Command to give to Cortana.-->
+    <Example>Launch</Example>
+    
+    <!--Action that Cortana executes for the Example of the same name.-->
+    <Command Name="LaunchApp">
+      <Example>launch</Example>
+      <ListenFor>launch</ListenFor>
+      <Feedback>I'm opening the speech recognition app.</Feedback>
+      <Navigate/>
+    </Command>
+
+    <!--Action that Cortana executes for the Example of the same name.-->
+    <Command Name="Demo">
+      <Example>demo</Example>
+      <ListenFor>demo</ListenFor>
+      <Feedback>I'm opening the speech recognition app, demo style.</Feedback>
+      <Navigate/>
+    </Command>    
+  </CommandSet>
+</VoiceCommands>

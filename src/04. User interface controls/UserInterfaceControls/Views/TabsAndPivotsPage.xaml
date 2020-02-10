@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="UserInterfaceControls.Views.TabsAndPivotsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserInterfaceControls.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Title="Pivot title">
+            <PivotItem Header="Pivot item 1">
+                <ContentControl>
+                    <Grid VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Stretch="Fill" Width="420" Height="280" Source="ms-appx:///Assets/Kitty.jpg"/>
+                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" 
+                           Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap" 
+                           Text="Lorem ipsum dolor sit nonumy sed consectetuer ising elit, sed diam"/>
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
+                           Text="Lorem ipsum dolor sit amet, consectetuer ising elit... "/>
+                    </Grid>
+                </ContentControl>
+            </PivotItem>
+
+            <PivotItem Header="Pivot item 2">
+                <ContentControl>
+                    <Grid VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="160"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120" />
+                            <RowDefinition Height="120" />
+                            <RowDefinition Height="120" />
+                            <RowDefinition Height="120" />
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Column="0" Grid.Row="0" Stretch="Fill" Margin="5" Source="ms-appx:///Assets/Kitty.jpg"/>
+                        <Image Grid.Column="1" Grid.Row="1" Stretch="Fill" Margin="5" Source="ms-appx:///Assets/Kitty.jpg"/>
+                        <Image Grid.Column="2" Grid.Row="2" Stretch="Fill" Margin="5" Source="ms-appx:///Assets/Kitty.jpg"/>
+                        <Image Grid.Column="3" Grid.Row="3" Stretch="Fill" Margin="5" Source="ms-appx:///Assets/Kitty.jpg"/>
+
+                        <TextBlock Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" 
+                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui magna, egestas eget bibendum at, porttitor in ligula. Morbi felis quam, scelerisque eu convallis eget, sollicitudin in magna. In vitae accumsan libero. Nam non ante euismod, vehicula nibh venenatis, luctus lacus. Nam eget lorem nec odio pharetra scelerisque eget at dui. Donec pharetra odio nunc, nec dictum ante lacinia vitae. Ut maximus justo ut purus dignissim, in finibus augue aliquam. Curabitur lacinia dui gravida mauris malesuada, ut venenatis lectus eleifend. Nunc ac egestas magna. Integer laoreet lectus lorem, non eleifend nulla hendrerit dignissim. Maecenas euismod sed tortor et tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                 Vivamus pulvinar, odio in tincidunt tempor, diam massa suscipit arcu, sed commodo quam velit eget dui. Sed quis sem sagittis, volutpat nisi et, tincidunt urna. Quisque consequat ultricies dignissim. Integer fringilla lobortis maximus. Curabitur non gravida felis. In facilisis venenatis ante. Vivamus nec dui ipsum. Curabitur tincidunt, quam nec finibus fringilla, mauris tortor laoreet augue, quis laoreet tellus lacus ac tellus. Nam cursus ullamcorper lacus id semper. Fusce eleifend gravida nunc et finibus. 
+                                 Maecenas ut libero at arcu imperdiet feugiat. Fusce nec efficitur lectus, sit amet faucibus enim. In nec neque felis. Donec at lacinia mauris. Sed elit metus, ultricies id ullamcorper id, sodales finibus metus. Phasellus in malesuada dolor. In ac est congue, fermentum velit ac, fringilla nisi. In viverra elit quam, id vulputate justo suscipit sit amet. 
+                                 Suspendisse lacinia consectetur vulputate. Ut tincidunt vestibulum nibh, a ornare tellus sollicitudin sed. Nullam interdum venenatis condimentum. Cras at elit vehicula, auctor neque sit amet, egestas urna. Morbi tempor nulla mi, eu egestas mi volutpat in. Ut vitae elementum nunc, vel fringilla massa. Vivamus ac purus nulla. Phasellus quis justo nulla. Proin volutpat ac eros sit amet vestibulum. In elit urna, rhoncus quis scelerisque ac, gravida quis mauris. Vestibulum lacinia ultricies massa. Suspendisse velit turpis, molestie ac velit eu, fringilla suscipit mi. Sed in facilisis nisi. Duis est orci, iaculis ut fringilla quis, accumsan eu nulla. 
+                                 Suspendisse potenti. Curabitur eget nibh mi. Praesent pharetra enim neque, a aliquam ex sagittis id. Ut pellentesque ac ipsum id consequat. Integer odio enim, fermentum eget nulla bibendum, aliquam dapibus erat. In tristique nulla a tortor varius finibus. Quisque quis tincidunt neque. In suscipit ex eget elit tempor accumsan. Nullam venenatis pharetra mi sit amet ullamcorper. Vestibulum efficitur interdum mauris ac pharetra. Nunc euismod purus sit amet lacus sodales, ac consectetur risus iaculis. Vivamus pulvinar metus risus, nec convallis arcu condimentum sollicitudin. Nam faucibus lacinia elementum. Duis felis libero, venenatis sit amet scelerisque nec, tincidunt at purus. Nulla eleifend suscipit ultricies. Sed tincidunt, justo quis lobortis placerat, sapien arcu luctus nulla, sit amet ultrices enim massa vel metus."
+                           Style="{StaticResource BodyTextBlockStyle}"/>
+                    </Grid>
+                </ContentControl>
+            </PivotItem>
+
+            <PivotItem Header="Pivot item 3">
+                <ContentControl>
+                    <Grid VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap" 
+                                       Text="Lorem ipsum dolor sit nonumy sed consectetuer ising elit, sed diam"/>
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="2" Margin="0,10,0,0" Text="Description text:"/>
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
+                                       Text="Lorem ipsum dolor sit amet, consectetuer ising elit... "/>
+                    </Grid>
+                </ContentControl>
+            </PivotItem>
+
+            <PivotItem Header="Pivot item 4">
+
+            </PivotItem>
+
+            <PivotItem Header="Pivot item 5">
+
+            </PivotItem>
+
+            <PivotItem Header="Pivot item 6">
+
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

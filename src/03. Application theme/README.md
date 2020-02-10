@@ -1,0 +1,2 @@
+# Application theme
+An application to show how to configure the light or dark [theme resources](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/xaml-theme-resources) from both the [App.xaml](https://github.com/nahuel-ianni/workshop-intro-to-uwp/blob/master/src/03.%20Application%20theme/ApplicationTheme/App.xaml) or [App.xaml.cs](https://github.com/nahuel-ianni/workshop-intro-to-uwp/blob/master/src/03.%20Application%20theme/ApplicationTheme/App.xaml.cs) file, showing how the most popular UI controls adapt automatically to the selected theme.

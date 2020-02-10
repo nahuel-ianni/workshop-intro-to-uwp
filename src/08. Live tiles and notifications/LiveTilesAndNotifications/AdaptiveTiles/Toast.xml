@@ -1,0 +1,19 @@
+﻿<toast launch="developer-defined-string">
+  <visual>
+    <binding template="ToastGeneric">
+      <text>Andrew B.</text>
+      <text>Shall we meet up at 8?</text>
+      <image placement="appLogoOverride" src="A.png" />
+    </binding>
+  </visual>
+  <actions>
+    <input id="message" type="text" placeHolderContent="reply here" />
+    
+    <!--By being on the foreground, these actions will call the OnActivate.-->
+    <action activationType="foreground" content="reply" arguments="reply"/>
+    <action activationType="foreground" content="f. dismiss" arguments="fdismiss" />
+    
+    <!--By being on the background, this will NOT call the OnActivate.-->
+    <action activationType="background" content="b. dismiss" arguments="bdismiss" />
+  </actions>
+</toast>
